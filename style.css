@@ -14,15 +14,17 @@ body {
 
 h1 {
   font-family: "Courier New", Courier, monospace;
-  font-size: 80px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  height: 600px;
+  width: 960px;
+  height: auto;
   border: 2px solid black;
+  margin-bottom: 10px;
 }
 
 .buttons {
@@ -31,13 +33,14 @@ h1 {
 }
 
 .btn {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px 12px;
+  font-family: "Jaro", sans-serif;
   font-size: 18px;
   width: 150px;
   text-align: center;
+  cursor: pointer;
 }
 
 .new {
@@ -48,8 +51,27 @@ h1 {
   background-color: brown;
 }
 
+.black {
+  background-color: black;
+  color: white;
+}
+
+.rainbow {
+  background-image: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
 .squares {
-  flex: 0 0 calc(100% / 32);
+  flex: 0 0 calc(100% / 16);
   aspect-ratio: 1 / 1;
   background-color: white;
+  border: 1px solid black;
 }
